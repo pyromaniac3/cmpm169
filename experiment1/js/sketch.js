@@ -4,9 +4,18 @@
 
 let xoff = 0; // both controls randomness of the noise
 let yoff = 0;
+let canvasContainer;
 
 function setup() {
-  createCanvas(800, 500);
+  // place our canvas, making it fit our container
+  canvasContainer = $("#canvas-container");
+  let canvas = createCanvas(canvasContainer.width(), canvasContainer.height());
+  canvas.parent("canvas-container");
+  // resize canvas is the page is resized
+  $(window).resize(function() {
+      console.log("Resizing...");
+      resizeCanvas(canvasContainer.width(), canvasContainer.height());
+  });
   background(0);
 }
 
