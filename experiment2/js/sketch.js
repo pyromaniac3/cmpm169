@@ -1,3 +1,7 @@
+// sketch.js - Perlin Noise generative art. Press any key to make more noise!!
+// Author: Athena Patronas
+// Date: 1/22/24
+
 let xoff = 0;
 let yoff = 0;
 let xoff2 = 0;
