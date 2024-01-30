@@ -46,7 +46,7 @@ function preload() {
 
 function setup() {
   createCanvas(1200, 600);
-  //imageMode(CENTER);
+  imageMode(CENTER);
   // set the current shape to the first in the array
   currentShape = shapes[0];
   tileWidth = width / tileCount;
