@@ -6,20 +6,17 @@ let rotateCube = true;
 let shrek, knocking, swamp;
 let counter =0;
 let redColor = 0;
+
 function preload(){
-  shrek = loadModel('./assets/Shrek.obj');
-  knocking = loadSound('./assets/knocking.mp3');
-  swamp = loadImage('./assets/swamp.png');
+    shrek = loadModel('./assets/Shrek.obj');
+    knocking = loadSound('./assets/knocking.mp3');
+    swamp = loadImage('./assets/swamp.png');
 }
 
 function setup() {
     createCanvas(windowWidth, windowHeight, WEBGL);
     blendMode(ADD);
-    background(0);
-    
-    smooth();
-    directionalLight(255, 255, 255, 1, 1, -1);
-    
+    background(0);    
 }
 
 function draw() {
@@ -28,7 +25,6 @@ function draw() {
     tint(redColor,0,0);
     image(swamp, -windowWidth / 2, -windowHeight / 2, windowWidth, windowHeight);
     
-  
     if (rotateCube) {
         rX += 0.03;
         rY += 0.03;
@@ -65,7 +61,7 @@ function draw() {
     
     for(let i = 0; i<=counter; i++){
         push();
-            translate(random(-width / 2, width / 2), random(-height / 2, height / 2), random(-200, 200));
+        translate(random(-width / 2, width / 2), random(-height / 2, height / 2), random(-200, 200));
         model(shrek);
         pop();
     }
