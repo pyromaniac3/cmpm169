@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Experiment X - Subject/Topic</title>
+	<title>Experiment 6 - Grammars and Text Art </title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
@@ -13,11 +13,14 @@
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<!-- Load jQuery library -->
-	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-	<!-- Load p5.js library -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- Include tracery.js from author -->
+    <script src="https://cdn.rawgit.com/galaxykate/tracery/master/js/tracery.min.js" defer></script>
+    <!-- Include grammars.js from author -->
+    <script src="https://cdn.rawgit.com/galaxykate/tracery/master/js/grammars.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 	<!-- Link to javascript files - DEFER waits until all elements are rendered -->
 	<!-- Use me for a JavaScript OOP Project -->
 	<script type="text/javascript" src="./js/project.js" DEFER></script>
@@ -28,23 +31,102 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/experiment.css -->
 	<main id="content">
 		<section>
-			<h1>Experiment X - Subject/Topic</h1>
+			<h1>Experiment 6 - Grammars and Text Art</h1>
 			<div class="minor-section">
 				<h2>Imitate</h2>
-				<p>To develop artistic creativity in coding, it can be helpful to start by studying and learning from existing examples. This might involve reviewing code written by others, analyzing successful techniques, or even copying and modifying code to better understand how it works. By imitating and learning from existing techniques and strategies, we can gain a better understanding of what has been done before and what is possible, and identify opportunities for improvement and innovation.</p>
-				<p>What code did you start with? (You don't need to provide the code itself, but where did you start?) Document this step briefly.</p>
+				<p>
+					Immediately I was drawn to the idea of doing a grammar based project. I was in a Interactive Storytelling class previously and we worked on making a 
+					highschool drama story using grammars in Step, so I have a bit of experience. The first thing that I thought could be fun to make is my 
+					own personalized Drawing Prompt Generator. I use these occasionally when I don’t know what to draw, 
+					so I think it would be cool to create my own that includes my personal characters/things I specifically like to draw. 
+					<br>
+					<br>
+					A few website examples:
+					
+					<!-- add pictures or some shit -->
+					<img src ="./assets/artpromptgen.png">
+					<img src="./assets/artpromptgenerator2.png">
+					<img src = "./assets/tracey.png">
+				</p>
+				<p>
+					<b>Goals for this project:</b>
+					<ul>
+						<li>A button to click to generate different categories of prompt like the examples in the website</li>
+						<li>A couple dozen different iterations of prompts</li>
+					</ul>
+					<b>Grammars I Want to Have:</b>
+					<ul>
+						<li>Character/OC</li>
+						<li>In Pose</li>
+						<li>With Context</li>
+					</ul>
+					<i>example: “Sailor Moon standing like Dio while preparing for battle”</i>
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Integrate</h2>
-				<p>After learning from existing techniques and strategies, we can build upon that foundation by combining elements from different sources. This might involve combining elements from different programming languages, using libraries or frameworks in new ways, or bringing together techniques from different fields or disciplines. By integrating and combining elements from different sources, we can create something new and unique.</p>
-				<p>How did you extend the code or combine with another technique to make something new? Document this step.</p>
+				<p>
+					First using the format from the JSON Tracery Example from the slides and Wes Modes Clickbait Article examples, I threw down some initial ideas.
+					<br>
+					<br>
+					<!-- image here-->
+					<img src = "assets/prompts.png">
+				
+					<br>
+					<br>
+					With a simple mouse click, I’m clearing the text and replacing it with something different. It’s fairly simple, but I do want to simulate buttons instead of just any mouse click. 
+					<br>
+					<br>
+					100000% have to improve my sentence structure haha, but the idea is there. Let’s do some fun UI stuff. 
+					<br>
+					Pausing on the UI elements, I knew I had to have more differing responses. I was struggling to think of things outside of what I was immediately seeing, so I went to ChatGPT! To generate verbs, locations, and sentences for me!
+					<br>
+					<br>
+					<!-- buncha images here-->
+					<img src = "assets/chatgpt.png">
+
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Innovate</h2>
-				<p>Finally, we can introduce new or original ideas to our coding process by thinking creatively and pushing the boundaries. This might involve developing entirely new techniques or approaches, or using existing techniques in new and creative ways. By innovating and introducing new ideas, we can create art that is truly groundbreaking.</p>
-				<p>How did you use the code as a jumping off point to create something truly unique and novel? Document this step thoroughly.</p>
+				<p>
+					SO ! on my journey to make it prettier I decided to 
+					<ul>
+						<li>1. Give it a Button</li>
+						<li>2. Give it a Menu</li>
+					</ul>
+					All good art generators come with an initial start menu. 
+					<br>
+					<!-- imagesss-->
+					<img src = "assets/menu.png">
+					<br>
+					It’s still kind of lame tho, and the button isn’t actually mapped to only make a new prompt when you click on the “new prompt button” so it’s not even a button at all really. 
+					<br>
+					<br>
+					Also I want the menu to be cooler. 
+					<br>
+					<br>
+					
+					I thought having something simple would be nice, I found this twinkling stars example on Open Processing
+
+					Stars at night twinkle by Mascaria: link here: https://openprocessing.org/sketch/1986668 
+					<!-- imagess-->
+					<br>
+					<img src= "assets/openprocessing.png">
+					<br>
+					Boom bada boom here we got a funny little menu screen. 
+
+					<!-- images-->
+					<br>
+					<img src = "assets/finalmenu.png">
+					<br>
+					And also the button darkens to simulate a press. I had it as a mouse click, but I changed it to be a key press just for simplicity. Plus now I don’t have to track where the user is clicking! So that’s a bonus for me. 
+					<!-- images-->
+					<br>
+					<img src = "./assets/buttonpress.png">
+				</p>
 			</div>
 
 			<div class="minor-section">
@@ -52,8 +134,18 @@
 				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment. Here's where you can put your reflections.</p>
 				<ul>
 					<li>What part of the project you contributed</li>
+						<p>
+							I was the only one who worked on the project. So I contributed everything, with a bit of help from Chat GPT and code from Mascaria and Wes Modes Tracery example from the lecture. 
+						</p>
 					<li>A reflection on your work and the work of the team</li>
+						<p>
+							My work was pretty okay! I like how it came out in the end, I wish the sentences were a bit more put together, but I think it gives it a lot of charm. 
+						</p>
 					<li>Brief highs and lows</li>
+						<p>
+							By far the most annoying part was putting the sentences together. I was struggling to come up with verbs and phrases and ways to split the prompts into catagories that weren't too repetivitve. 
+							However, I think it came out alright in the end. The high was definitely seeing the final product and clicking through the different prompts. I had a fun time reading through the combinations. Particularly any that included the character "They".
+						</p>
 				</ul>
 			</div>
 
